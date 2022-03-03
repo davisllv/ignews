@@ -29,6 +29,6 @@ describe("ActiveLink component", () => {
       </ActiveLink>
     );
 
-    expect(getByText("Home")).toHaveClass("class");
+    expect(getByText("Home")).toHaveClass("active");
   });
 });
