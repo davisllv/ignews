@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { existsSync } from "fs";
 import { Header } from ".";
 
@@ -22,8 +22,12 @@ jest.mock("next-auth/client", () => {
 describe("Header component", () => {
   test("active link renders correctly", () => {
     const { getByText } = render(<Header />);
-
     expect(getByText("Home")).toBeInTheDocument();
     expect(getByText("Posts")).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", {
+        name: /sign in with github/i,
+      })
+    );
   });
 });
