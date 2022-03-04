@@ -1,4 +1,5 @@
 import { render } from "@testing-library/react";
+import { existsSync } from "fs";
 import { Header } from ".";
 
 jest.mock("next/router", () => {
@@ -7,6 +8,13 @@ jest.mock("next/router", () => {
       return {
         asPath: "/",
       };
+    },
+  };
+});
+jest.mock("next-auth/client", () => {
+  return {
+    useSession() {
+      return [null, false];
     },
   };
 });
