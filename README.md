@@ -16,12 +16,9 @@
   </a>
 
   <a href="https://www.linkedin.com/in/khalleb/">
-    <img alt="Made by Khalleb" src="https://img.shields.io/badge/made%20by-khalleb-%237519C1">
+    <img alt="Made by Davi" src="https://img.shields.io/badge/made%20by-khalleb-%237519C1">
   </a>
 
-  <a href="https://github.com/khalleb/ignews/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/khalleb/ignews">
-  </a>
 
   <img alt="License" src="https://img.shields.io/github/license/khalleb/ignews">
 </p>
